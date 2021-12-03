@@ -13,7 +13,11 @@ after_success:
   # Log in to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take images and push them to docker hub
+  - docker tag local-image:chaoyangfan/multi-client new-repo:chaoyangfan/multi-client 
   - docker push chaoyangfan/multi-client
+  - docker tag local-image:chaoyangfan/multi-nginx new-repo:chaoyangfan/multi-nginx 
   - docker push chaoyangfan/multi-nginx
+  - docker tag local-image:chaoyangfan/multi-server new-repo:chaoyangfan/multi-server
   - docker push chaoyangfan/multi-server
+  - docker tag local-image:chaoyangfan/multi-worker new-repo:chaoyangfan/multi-worker
   - docker push chaoyangfan/multi-worker
