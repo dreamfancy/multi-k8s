@@ -9,7 +9,7 @@ after_success:
   - docker build -t dreamfancy1987/multi-client ./client
   - docker build -t dreamfancy1987/multi-nginx ./nginx
   - docker build -t dreamfancy1987/multi-server ./server
-  - docker build -t dremfancy1987/multi-worker ./worker
+  - docker build -t dreamfancy1987/multi-worker ./worker
   # Log in to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin docker.io
   # Take images and push them to docker hub
