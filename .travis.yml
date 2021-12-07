@@ -22,7 +22,7 @@ deploy:
   region: 'us-east-1'
   app: 'multi-docker'
   env: 'MultiDocker-env'
-  bucket_name: 'elasticbeanstalk-us-east-1-745270419650Info'
+  bucket_name: 'elasticbeanstalk-us-east-1-745270419650'
   bucket_path: 'multi-docker'
   on:
     branch: master
